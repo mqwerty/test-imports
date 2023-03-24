@@ -14,8 +14,7 @@
   },
   "imports": {
     "#utils": "./build/utils/index.js",
-    "#utils/*.js": "./build/utils/*.js",
-    "#utils/*": "./build/utils/*/index.js"
+    "#utils/*.ts": "./build/utils/*.js"
   },
   "devDependencies": {
     "@swc/core": "1.3.42",

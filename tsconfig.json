@@ -26,11 +26,8 @@
       "#utils": [
         "utils"
       ],
-      "#utils/*.js": [
-        "utils/*.ts"
-      ],
-      "#utils/*": [
-        "utils/*/index.ts"
+      "#utils/*.ts": [
+        "utils/*"
       ],
     },
     "strict": true,
