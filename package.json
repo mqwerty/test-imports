@@ -1,0 +1,10 @@
+{
+  "name": "@mqwerty/test-imports",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "ISC",
+  "imports": {
+    "#utils": "./src/utils/index.js",
+    "#utils/*.js": "./src/utils/*.js"
+  }
+}
