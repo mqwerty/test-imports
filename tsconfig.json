@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
     "lib": [
       "ESNext"
     ],
@@ -24,13 +24,10 @@
     "baseUrl": "src",
     "paths": {
       "#utils": [
-        "utils"
-      ],
-      "#utils/*.js": [
-        "utils/*.ts"
+        "utils/index.ts"
       ],
       "#utils/*": [
-        "utils/*/index.ts"
+        "utils/*"
       ],
     },
     "strict": true,
@@ -47,6 +44,6 @@
     "transpileOnly": true,
     "scope": true,
     "scopeDir": "src",
-    "require": ["tsconfig-paths/register"]
+    "esm": true
   }
 }
