@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "lib": [
+      "ESNext"
+    ],
+    "allowJs": true,
+    "checkJs": false,
+    "sourceMap": true,
+    "outDir": "build",
+    "removeComments": false,
+    "noEmitOnError": true,
+    "incremental": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "baseUrl": "src",
+    "paths": {
+      "#utils": [
+        "utils"
+      ],
+      "#utils/*.js": [
+        "utils/*.ts"
+      ],
+      "#utils/*": [
+        "utils/*/index.ts"
+      ],
+    },
+    "strict": true,
+    "types": ["@types/node"]
+  },
+  "include": [
+    "src",
+  ],
+  "exclude": [
+    "**/node_modules",
+  ],
+  "ts-node": {
+    "swc": true,
+    "transpileOnly": true,
+    "scope": true,
+    "scopeDir": "src",
+    "require": ["tsconfig-paths/register"]
+  }
+}
