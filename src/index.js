@@ -1,6 +1,6 @@
-const { one } = require('#utils')
-const { foo } = require('#utils/foo')
-const { bar } = require('#utils/bar.js')
+import { one } from '#utils'
+import { foo } from '#utils/foo'
+import { bar } from '#utils/bar.js'
 
 one()
 foo()
