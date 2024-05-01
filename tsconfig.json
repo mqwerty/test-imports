@@ -38,12 +38,5 @@
   ],
   "exclude": [
     "**/node_modules",
-  ],
-  "ts-node": {
-    "swc": true,
-    "transpileOnly": true,
-    "scope": true,
-    "scopeDir": "src",
-    "require": ["tsconfig-paths/register"]
-  }
+  ]
 }
