@@ -1,7 +1,11 @@
 const { one } = require('#utils')
 const { foo } = require('#utils/foo')
 const { bar } = require('#utils/bar.js')
+const { inner } = require('#utils/inner/index')
+const { baz } = require('#utils/inner/baz')
 
 one()
 foo()
 bar()
+inner()
+baz()

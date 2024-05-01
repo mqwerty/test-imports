@@ -4,8 +4,11 @@
   "license": "UNLICENSED",
   "private": true,
   "engines": {
-    "node": ">=18",
-    "npm": ">=8"
+    "node": ">=20",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "start": "node ./src/index.js"
   },
   "imports": {
     "#utils": "./src/utils/index.js",
@@ -13,6 +16,6 @@
     "#utils/*": "./src/utils/*.js"
   },
   "devDependencies": {
-    "prettier": "2.8.7"
+    "prettier": "3.2.5"
   }
 }
